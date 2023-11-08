@@ -1,0 +1,253 @@
+/*Cassper Brown
+October 05, 2023
+File Name: Styles.css
+Term Project */
+
+/*Css Reset*/
+body, main, nav, header, h1, footer, div, img, figure, figcaption {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body{
+	background-color: #38b08e; /*light green*/
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+	top: 0;
+	background-color: #38b08e;
+	height: 190px;
+}
+
+header img{
+	height: 100%;
+	max-width: 100%;
+	display: block;
+    float: center;
+    padding-left: 44%;
+}
+
+.BannerImg {
+    max-width: 100%;
+    max-height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+nav{
+    background-color: #6cebc7;
+}
+
+nav ul {
+	list-style-type: none;
+	text-align: center;
+    margin: 0;
+}
+
+nav li{
+	display: block;
+    color: #000;
+	font-size: 1.5em;
+    border-top: 1px solid #000;
+    font-weight: bold;
+}
+
+nav li a{
+	display: block;
+	color: #000;
+	text-align: center;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+
+#AABatteries, #NVBatteries, #Ccells {
+    float: left;
+    margin: 2% 4%;
+    width: 25%;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+#stop {
+    color: #b4fa98;
+}
+
+#CEO, #WIFE, #MILES {
+	width: 29%;
+	float: left;
+	margin: 2% 2%;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.action {
+	font-size: 1.35em;
+	color: #666600;
+	font-weight: bold;
+    text-shadow: 5px 5px 8px #ccc;
+}
+
+.frame {
+    position: relative;
+    max-width: 450px;
+    max-height: 300px;
+    margin: auto auto;
+}
+
+.pic-text{
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+main {
+	clear: left;
+	background-color:#6cebc7; /*light green*/
+	padding: 2%;
+	font-size: 1.25em;
+	float: center;
+	text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: bold;
+}
+
+.contact {
+    font-size: 1.35em;
+	color: #44DD57;
+	font-weight: bold;
+}
+
+.map {
+	border: 8px solid #000;
+}
+
+footer p {
+	font-size: 0.75em;
+	text-align: center;
+	color: #000;
+	padding: 0 1em;
+}
+
+footer p a {
+	color: #000;
+	text-decoration: none;
+}
+
+/*Tablet VeiwPort */
+@media screen and (min-width: 550px), print {
+    .tab-desk {
+        display: block;
+    }
+    
+    .mobile {
+        display: none;
+    }
+    
+    span.tab-desk {
+        display: inline;
+    }
+    
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.5em;
+        border-right: 1px solid #e5e9fc;
+    }
+    
+    nav li:last-child {
+        border-right: none;
+    }
+    
+    nav li a {
+        padding-bottom: 0.25em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    
+    .grid {
+        display:grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
+    
+    .pic-text{
+        font-size: 2em;
+        padding: 10px;
+    }
+    
+    .map {
+        width: 500px;
+        height: 450px;
+    }
+}
+@media screen and (min-width: 796px), print {
+   
+    nav li a {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+    
+    nav li a:hover {
+        color: #373684;
+        background-color: #e5e9fc;
+    }
+    
+    #info ul {
+        margin-left: 5%;
+    }
+    
+    main h3 {
+        font-size: 1.5em;
+    }
+    
+     .pic-text {
+        font-size: 1.5em;
+        padding: 20px;
+    }
+    
+    .frame {
+        width: 100%;
+        opacity: 0.9;
+    }
+    
+    .frame:hover{
+        opacity: 1;
+        box-shadow: 8px 8px 10px #808080;
+    }
+    
+    #piano, #guitar, #violin {
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
+}
+
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+
+
+
+
+
+
+
+
+
