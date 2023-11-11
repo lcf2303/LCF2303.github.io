@@ -14,8 +14,26 @@ body{
 	background-color: #38b08e; /*light green*/
 }
 
-* {
-    box-sizing: border-box;
+img {
+	max-width: 100%;
+	display: block;
+}
+
+.mobile {
+	display: block;
+}
+
+.tablet-desktop {
+	display: none;
+}
+
+.mobile h3 {
+    text-shadow: 5px 5px 8px #ccc;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns: auto;
 }
 
 header {
@@ -29,16 +47,8 @@ header img{
 	max-width: 100%;
 	display: block;
     float: center;
-    padding-left: 44%;
+    padding-left: 40%;
 }
-
-.BannerImg {
-    max-width: 100%;
-    max-height: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-} 
 
 nav{
     background-color: #6cebc7;
@@ -66,50 +76,6 @@ nav li a{
 	text-decoration: none;
 }
 
-#AABatteries, #NVBatteries, #Ccells {
-    float: left;
-    margin: 2% 4%;
-    width: 25%;
-    font-family: 'Chakra Petch', sans-serif;
-}
-
-#stop {
-    color: #b4fa98;
-}
-
-#CEO, #WIFE, #MILES {
-	width: 29%;
-	float: left;
-	margin: 2% 2%;
-    font-family: 'Chakra Petch', sans-serif;
-}
-
-.action {
-	font-size: 1.35em;
-	color: #666600;
-	font-weight: bold;
-    text-shadow: 5px 5px 8px #ccc;
-}
-
-.frame {
-    position: relative;
-    max-width: 450px;
-    max-height: 300px;
-    margin: auto auto;
-}
-
-.pic-text{
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 1.5em;
-    font-weight: bold;
-}
 
 main {
 	clear: left;
@@ -145,8 +111,17 @@ footer p a {
 }
 
 /*Tablet VeiwPort */
-@media screen and (min-width: 550px), print {
-    .tab-desk {
+@media screen and (min-width: 360px), print{
+    
+    .BannerImg {
+        max-width: 100%;
+        max-height: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    
+    .tablet-desktop {
         display: block;
     }
     
@@ -156,6 +131,14 @@ footer p a {
     
     span.tab-desk {
         display: inline;
+    }
+    
+    header img {
+        height: 100%;
+        max-width: 100%;
+        display: block;
+        float: center;
+        padding-left: 44%;
     }
     
     nav li {
@@ -181,9 +164,31 @@ footer p a {
         grid-gap: 20px;
     }
     
+    .frame {
+        position: relative;
+        max-width: 450px;
+        max-height: 300px;
+        margin: auto auto;
+    }
+
     .pic-text{
-        font-size: 2em;
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        width: 100%;
         padding: 10px;
+        text-align: center;
+        font-family: Verdana, Arial, sans-serif;
+        font-size: 2em;
+        font-weight: bold;
+    }
+    
+    #AABatteries, #NVBatteries, #Ccells {
+        float: left;
+        margin: 2% 4%;
+        width: 25%;
+        font-family: 'Chakra Petch', sans-serif;
     }
     
     .map {
@@ -191,8 +196,8 @@ footer p a {
         height: 450px;
     }
 }
-@media screen and (min-width: 796px), print {
-   
+@media screen and (min-width: 1015px), print{
+
     nav li a {
         padding-top: 0.5em;
         padding-bottom: 0.5em;
@@ -227,6 +232,22 @@ footer p a {
         opacity: 1;
         box-shadow: 8px 8px 10px #808080;
     }
+    
+    #Shop {
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        background-color: darkturquoise;
+        text-align: left;
+        padding: 1% 2%;
+    }
+
+    #Shop dt {
+	   font-weight: bold;
+    }
+
+    #Shop dd {
+	   padding: 0.5% 1% 2% 0;
+    } 
     
     #piano, #guitar, #violin {
         width: 29%;
