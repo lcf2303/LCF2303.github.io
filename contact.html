@@ -4,6 +4,7 @@
   <title>Ghost Batteries</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
            <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
@@ -33,12 +34,72 @@
    </nav>
    
    <main>
+       <h2>Sign Up Below Or Contact Us for More Info!</h2>
+			<h4 class="mobile">Phone:<a href="tel:2263496329">(226) 349-6329</a></h4>
+            <h4 class="tablet-desktop tel-num">Phone: (226) 349-6329</h4>
+			<h4>Email us: <a href="mailto:info@ghostbatteries.net">info@ghostbatteries.net</a></h4>
+			<h4>Visit us at: 1457 London Rd Sarnia, ON N7S 6K4</h4>
+       
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2919.0016102697537!2d-82.34885948790732!3d42.97823972102176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8825830ada06f7cb%3A0x8f33c2e6a2ccfad1!2sLambton%20College!5e0!3m2!1sen!2sca!4v1701197726229!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    
-		<div>
-		
-		</div>
-		
-   </main>
+         <div id="form">       
+            <form class="form-grid">
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <label for="fname">First Name:</label>
+                    <input type="text" name="fname" id="fname" required>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" name="lname" id="lname" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Class Information</legend>
+                    <p>I would like to sign up for:</p>
+                     <select name="classes" id="classes">
+                        <option value="Nov31">November 31st</option>
+                        <option value="Dec2">December 2nd</option>
+                        <option value="dec6">December 6th</option>
+                        <option value="dec9">December 9th</option>
+                        <option value="dec13">December 13th</option>
+                        <option value="dec14">December 14th</option>
+                        <option value="dec20">December 20th</option>
+                        <option value="jan10">January 10th</option>
+                        <option value="jan12">January 12th</option>
+                        <option value="jan20">January 20th</option>
+                        <option value="jan25">January 25th</option>
+                        <option value="Jan30">January 30th</option>
+                    </select> 
+                    
+                    <p>Click here for more information</p>
+                    <label for="More"><input type="checkbox" name="Info" id="More">More Information</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Referral Source</legend>
+                    <label for="reference">How did you find us?</label> 
+                    <select name="reference" id="reference">
+                        <option value="ad">Advertisement</option>
+                        <option value="friend">Friend</option>
+                        <option value="google">Google</option>
+                        <option value="social">Social Media</option>
+                        <option value="other">Other</option>
+                    </select> 
+
+                    <label for="questions"> Questions?</label>
+                    <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+                </fieldset>
+
+                <button type="submit" autofocus onclick="alert('Would you like to submit this form?')">Submit</button>
+                <button type="reset" autofocus onclick="alert('Are you sure you would like to reset this form?')">Reset</button>
+             </form>
+        </div>
+     </main>
 
    
    <footer>
