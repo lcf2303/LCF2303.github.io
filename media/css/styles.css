@@ -1,0 +1,393 @@
+/*Cassper Brown
+October 05, 2023
+File Name: Styles.css
+Term Project */
+
+/*Css Reset*/
+body, main, nav, header, h1, footer, div, img, figure, figcaption {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body{
+	background-color: #38b08e; /*light green*/
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+* {
+    border-collapse: collapse;
+}
+
+.mobile {
+	display: block;
+}
+
+.tablet-desktop {
+	display: none;
+}
+
+header {
+	top: 0;
+	background-color: #38b08e;
+	height: 153px;
+}
+
+header img{
+	margin: 0 auto;
+}
+
+nav {
+	padding: 0%;
+	margin-bottom: 1%;
+    background-color: #6cebc7;
+}
+
+nav ul {
+	list-style-type: none;
+    padding-right: 2em;
+	text-align: center;
+}
+
+nav li {
+	font-size: 1.5em;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: bold;
+	border-top: 1px solid #fff;
+}
+
+nav li:first-child {
+	border-top: none;
+}
+
+nav li a { 
+	display: block;
+	color: #000;
+	padding: 0.25em;
+	text-decoration: none;
+}
+
+main {
+	clear: left;
+	background-color:#6cebc7; /*light green*/
+	padding: 2%;
+	font-size: 1.25em;
+	float: center;
+	text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: bold;
+}
+.frame {
+    position: relative;
+    max-width: 450px;
+    margin: 2% auto;
+}
+
+.pic-text{
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 97%;
+    padding: 5px;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#ceo, #wife, #randomguy {
+	margin: 0 2%;
+}
+
+.round {
+	border-radius: 8px;
+}
+
+table {
+    width: 90%;
+    margin: 0 auto;
+}
+th, td {
+    border: 1px solid #000;
+    padding: 0.5em;
+}
+th{
+    background-color: #b4fa73;
+    font-weight: bold;
+}
+.trainscd {
+    border: 5px solid green;
+}
+
+.contact {
+    font-size: 1.35em;
+	color: #44DD57;
+	font-weight: bold;
+}
+
+.map {
+	border: 8px solid #000;
+}
+
+#form {
+    margin-top: 2%;
+    background-color: #6cebde;
+    padding: 2%;
+    border: 2px solid black;
+}
+
+#form h2 {
+    text-align: center;
+}
+
+/*form elements*/
+fieldset, input, select, textarea {
+    margin-bottom: 2%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+form #submit {
+    margin: 0 auto;
+    border: none;
+    display: block;
+    padding: 2%;
+    background-color: #b3b3b3;
+    font-size: 1em;
+    border-radius: 10px;
+}
+
+
+footer p {
+	font-size: 0.75em;
+	text-align: center;
+	color: #000;
+	padding: 0 1em;
+}
+
+footer p a {
+	color: #000;
+	text-decoration: none;
+}
+
+/*Tablet VeiwPort */
+@media only screen and (min-width: 450px), print{
+    
+    .BannerImg {
+        max-width: 100%;
+        max-height: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    
+    .tablet-desktop {
+        display: block;
+    }
+    
+    .mobile {
+        display: none;
+    }
+    
+    span.tab-desk {
+        display: inline;
+    }
+    
+    header img{
+	margin: 0 auto;
+    }
+    
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.25em;
+        border-right: 1px solid #e5e9fc;
+    }
+    
+    nav li:last-child {
+        border-right: none;
+    }
+    
+    nav li a {
+        padding-bottom: 0.25em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    
+    .grid {
+        display:grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
+    
+    .frame {
+        position: relative;
+        max-width: 450px;
+        max-height: 300px;
+        margin: auto auto;
+    }
+
+    .pic-text{
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        width: 91%;
+        padding: 10px;
+        text-align: center;
+        font-family: Verdana, Arial, sans-serif;
+        font-size: 1em;
+        font-weight: bold;
+    }
+    
+    .grid-item4{
+        grid-column: 1 / span 3;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #98faa1;
+    }
+    
+    #Shop {
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        background-color: darkturquoise;
+        text-align: left;
+        padding: 1% 2%;
+    }
+
+    #Shop dt {
+	   font-weight: bold;
+    }
+
+    #Shop dd {
+	   padding: 0.5% 1% 2% 0;
+    } 
+    
+    
+    #AABatteries, #NVBatteries, #Ccells {
+        float: left;
+        margin: 2% 4%;
+        width: 25%;
+        font-family: 'Chakra Petch', sans-serif;
+    }
+    
+    .map {
+        width: 500px;
+        height: 450px;
+    }
+    
+    form{
+        width: 70%;
+        margin:0 auto;
+    }
+}
+@media only screen and (min-width: 1015px), print{
+
+    nav li a {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        font-size: 1.25em;
+    }
+    
+    nav li a:hover {
+        color: #373684;
+        background-color: #e5e9fc;
+    }
+    
+    #info ul {
+        margin-left: 5%;
+    }
+    
+    main h3 {
+        font-size: 1.5em;
+    }
+    
+     .pic-text {
+        font-size: 1.5em;
+        padding: 20px;
+    }
+    
+    .frame {
+        width: 100%;
+        opacity: 0.9;
+    }
+    
+    .frame:hover{
+        opacity: 1;
+        box-shadow: 8px 8px 10px #808080;
+    }
+    
+    #ceo, #wife, #randomguy {
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
+    
+    #exercises {
+        clear: left;
+    }
+    
+    #Shop {
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        background-color: darkturquoise;
+        text-align: left;
+        padding: 1% 2%;
+    }
+
+    #Shop dt {
+	   font-weight: bold;
+    }
+
+    #Shop dd {
+	   padding: 0.5% 1% 2% 0;
+    } 
+    
+    #piano, #guitar, #violin {
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
+    form {
+        width: auto;
+    }
+    
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
+}
+
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+
+
+
+
+
+
+
+
+
